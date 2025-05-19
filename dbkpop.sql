@@ -1,4 +1,6 @@
 CREATE DATABASE dbkpop;
+use dbkpop;
+
 CREATE TABLE concerts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nama VARCHAR(100) NOT NULL,
