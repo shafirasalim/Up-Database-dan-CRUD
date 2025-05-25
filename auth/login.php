@@ -31,13 +31,12 @@ class Login {
                 $_SESSION['level'] = $row['level'];
                 $stmt->close();
 
-                // Redirect berdasarkan level user
                 if ($row['level'] == 0) {
                     echo "<script>window.location.href='../admin_side.php';</script>";
                 } else if ($row['level'] == 1) {
                     echo "<script>window.location.href='../user_side.php';</script>";
                 }
-                exit();  // pastikan berhenti setelah redirect
+                exit();  
             } else {
                 echo "<script>alert('Username atau Password salah');</script>";
                 $stmt->close();
