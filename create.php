@@ -110,7 +110,7 @@
         ];
 
         $concert->addConcert($data);
-        echo "<script>alert('Konser berhasil ditambahkan!'); window.location.href='index.php';</script>";
+        echo "<script>alert('Konser berhasil ditambahkan!'); window.location.href='admin_side.php';</script>";
     }
     ?>
   </div>

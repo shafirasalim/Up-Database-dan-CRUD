@@ -117,7 +117,7 @@
         $where = ['id' => $id];
         $concert->updateConcert($data, $where);
 
-        echo "<script>alert('Data konser berhasil diupdate'); window.location.href='index.php';</script>";
+        echo "<script>alert('Data konser berhasil diupdate'); window.location.href='admin_side.php';</script>";
     }
     ?>
   </div>
